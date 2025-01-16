@@ -4,6 +4,6 @@ import pin.macaroon.pyorite.Pyorite;
 
 public class ModItems {
     public static void regModItems(){
-        Pyorite.LOGGER.info("pinmacaroon registering items lmao");
+        Pyorite.LOGGER.info("pinmacaroon registering items");
     }
 }
