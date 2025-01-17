@@ -26,7 +26,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.ARROWS)
                 ;
         getOrCreateTagBuilder(ModItemTags.AMMO)
-                .add(ModItems.SHWRAPPEL);//TODO change to custom item
+                .add(ModItems.SHWRAPPEL);
     }
     private static TagKey<Item> of(String id) {
         return TagKey.of(RegistryKeys.ITEM, new Identifier(Pyorite.MOD_ID + ":" + id));
