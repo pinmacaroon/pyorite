@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "S": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "SA",
+    "AS"
+  ],
+  "result": {
+    "item": "pyorite:elementite_ingot"
+  },
+  "show_notification": true
+}
