@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import pin.macaroon.pyorite.items.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -24,5 +25,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ELEMENTITE_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AEROBLADE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HANDGUN, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SHWRAPPEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PYORITE_CHUNK, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_HELMET ));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_CHESTPLATE ));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_LEGGINGS ));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_BOOTS ));
     }
 }

@@ -71,6 +71,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.DEEPSLATE), conditionsFromItem(Blocks.DEEPSLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ELEMENTITE_TEMPLATE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GILDED_NETHERITE_HOLY_GREATSWORD, 1)
+                .pattern("r n")
+                .pattern("fng")
+                .pattern("bfr")
+                .input('r', Items.RAW_GOLD)
+                .input('n', Items.NETHERITE_BLOCK)
+                .input('g', Items.RAW_GOLD_BLOCK)
+                .input('b', Items.BLAZE_ROD)
+                .input('f', Items.NETHERITE_SCRAP)
+                .criterion(hasItem(Items.ANCIENT_DEBRIS), conditionsFromItem(Items.ANCIENT_DEBRIS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GILDED_NETHERITE_HOLY_GREATSWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HANDGUN, 1)
+                .pattern("f  ")
+                .pattern(" p ")
+                .pattern("  s")
+                .input('s', Items.FLINT_AND_STEEL)
+                .input('p', ModItems.PYORITE_CHUNK)
+                .input('f', Items.DROPPER)
+                .criterion(hasItem(ModItems.PYORITE_CHUNK), conditionsFromItem(ModItems.PYORITE_CHUNK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDGUN)));
+
 
         //TODO add normal crafting recipe for aeroblade
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AEROBLADE, 1)

@@ -11,6 +11,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import pin.macaroon.pyorite.Pyorite;
 import pin.macaroon.pyorite.items.ModItemTags;
+import pin.macaroon.pyorite.items.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,7 +26,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.ARROWS)
                 ;
         getOrCreateTagBuilder(ModItemTags.AMMO)
-                .add(Items.GUNPOWDER); //TODO change to custom item
+                .add(ModItems.SHWRAPPEL);//TODO change to custom item
     }
     private static TagKey<Item> of(String id) {
         return TagKey.of(RegistryKeys.ITEM, new Identifier(Pyorite.MOD_ID + ":" + id));

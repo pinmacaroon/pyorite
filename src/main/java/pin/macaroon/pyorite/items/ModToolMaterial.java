@@ -1,6 +1,7 @@
 package pin.macaroon.pyorite.items;
 
 import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -9,7 +10,8 @@ import java.util.function.Supplier;
 public enum ModToolMaterial implements ToolMaterial {
     AEROITE(MiningLevels.DIAMOND, 300, 7.0F, 2.5F, 12, () -> Ingredient.ofItems(ModItems.AEROITE)),
     SCYTHE_MATERIAL(5, 650, 0.5f, 3.5f, 26,
-            () -> Ingredient.ofItems(ModItems.ELEMENTITE));
+            () -> Ingredient.ofItems(ModItems.ELEMENTITE)),
+    HOLY(5, 2500,  4.5f, 4.6f, 26, () -> Ingredient.ofItems(Items.AIR));
 
     //ToolMaterials
 
