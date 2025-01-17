@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "pyorite:elementite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "result": {
+    "item": "pyorite:elementite_scythe"
+  },
+  "template": {
+    "item": "pyorite:elementite_smithing_template"
+  }
+}

@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    //STEEL(MiningLevels.DIAMOND, 300, 7.0F, 2.5F, 12, () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
+    AEROITE(MiningLevels.DIAMOND, 300, 7.0F, 2.5F, 12, () -> Ingredient.ofItems(ModItems.AEROITE)),
     SCYTHE_MATERIAL(5, 650, 0.5f, 3.5f, 26,
             () -> Ingredient.ofItems(ModItems.ELEMENTITE));
 

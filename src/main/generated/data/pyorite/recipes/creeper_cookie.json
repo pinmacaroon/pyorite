@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cookie"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "M": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "pattern": [
+    " MM",
+    "GCM",
+    "GG "
+  ],
+  "result": {
+    "item": "pyorite:creeper_cookie"
+  },
+  "show_notification": true
+}
