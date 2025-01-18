@@ -5,12 +5,13 @@
     "item.pyorite.pyorite_leggings": "Pyorite Leggings",
     "item.pyorite.pyorite_boots": "Pyorite Boots",
     "item.pyorite.pyorite_helmet": "Pyorite Helmet",
-    "item.pyorite.gilded_netherite_holy_greatsword": "Gilded Netherite GreatSword",
+    "item.pyorite.gilded_netherite_holy_greatsword": "Gilded Netherite Great Sword",
     "item.pyorite.elementite_scythe": "Elementite Scythe",
     "item.pyorite.elementite_ingot": "Elementite Ingot",
     "item.pyorite.elementite_smithing_template": "Elementite Smithing Template",
     "item.pyorite.aeroblade": "Aeroblade",
     "item.pyorite.creeper_cookie": "Creeper Cookie",
+    "item.pyorite.creeper_cookie.description": "hmm i dont.. *crunch* i.. have no ide- BOOM",
     "item.pyorite.aeroite": "Aeroite",
     "item.pyorite.handgun": "Handgun"
 }
