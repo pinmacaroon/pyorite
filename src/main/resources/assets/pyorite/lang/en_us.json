@@ -11,7 +11,7 @@
     "item.pyorite.elementite_smithing_template": "Elementite Smithing Template",
     "item.pyorite.aeroblade": "Aeroblade",
     "item.pyorite.creeper_cookie": "Creeper Cookie",
-    "item.pyorite.creeper_cookie.description": "hmm i dont.. *crunch* i.. have no ide- BOOM",
+    "item.pyorite.creeper_cookie.lore": "hmm i dont.. *crunch* i.. have no ide- BOOM",
     "item.pyorite.aeroite": "Aeroite",
-    "item.pyorite.handgun": "HandCannon"
+    "item.pyorite.handgun": "Hand Cannon"
 }
