@@ -8,6 +8,7 @@ import pin.macaroon.pyorite.entity.ModEntities;
 import pin.macaroon.pyorite.entity.effect.ModStatusEffects;
 import pin.macaroon.pyorite.items.ModItemTags;
 import pin.macaroon.pyorite.items.ModItems;
+import pin.macaroon.pyorite.items.ModLootTableModifiers;
 
 public class Pyorite implements ModInitializer {
 	public static final String MOD_ID = "pyorite";
@@ -23,5 +24,7 @@ public class Pyorite implements ModInitializer {
 		ModItemTags.regTags();
 		ModEntities.registerEntities();
 		ModStatusEffects.registerModEffects();
+		ModLootTableModifiers.modifyLootTables();
+
 	}
 }
