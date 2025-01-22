@@ -12,15 +12,22 @@
       "item": "minecraft:amethyst_shard"
     },
     "T": {
-      "item": "minecraft:netherite_upgrade_smithing_template"
+      "item": "pyorite:elementite_smithing_template"
+    },
+    "a": {
+      "item": "minecraft:amethyst_block"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [
-    "SGS",
-    "STS",
-    "DDD"
+    "SDg",
+    "aTG",
+    "SDg"
   ],
   "result": {
+    "count": 2,
     "item": "pyorite:elementite_smithing_template"
   },
   "show_notification": true

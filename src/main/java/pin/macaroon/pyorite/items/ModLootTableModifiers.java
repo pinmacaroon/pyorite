@@ -22,7 +22,7 @@ public class ModLootTableModifiers {
             if (ANCIENT_CITY_IP.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.3f)) //ch in %
+                        .conditionally(RandomChanceLootCondition.builder(0.1f)) //ch in %
                         .with(ItemEntry.builder(ModItems.ELEMENTITE_TEMPLATE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 builder.pool(poolBuilder.build());
