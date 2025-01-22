@@ -24,7 +24,7 @@ public class ModItems {
 
     public static final Item ELEMENTITE = registerItem("elementite_ingot", new Item(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
     public static final Item ELEMENTITE_TEMPLATE = registerItem("elementite_smithing_template", new Item(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
-    public static final Item AEROBLADE = registerItem("aeroblade", new AerobladeItem(ModToolMaterial.AEROITE, 3, -2.7F, new Item.Settings().rarity(Rarity.EPIC), 150, 1.5F));
+    public static final Item AEROBLADE = registerItem("aeroblade", new AerobladeItem(ModToolMaterial.AEROITE, 3,1, new Item.Settings().rarity(Rarity.EPIC), 150, 1.3F));
     private static Item field26a = new Item(new FabricItemSettings().food(ModFoodComponents.CREEPER_COOKIE).maxCount(64));
     public static final Item CREEPER_COOKIE = registerItem("creeper_cookie", field26a);
     public static final Item AEROITE = registerItem("aeroite", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
