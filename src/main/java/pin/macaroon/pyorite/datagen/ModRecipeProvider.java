@@ -122,5 +122,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 )
                 .criterion(hasItem(material), conditionsFromItem(material))
                 .offerTo(exporter, getItemPath(result) + "_smithing");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PYORITE_CHUNK,1).input(Items.IRON_INGOT).input(Items.NETHERITE_SCRAP).criterion(hasItem(ModItems.PYORITE_CHUNK),conditionsFromItem(ModItems.PYORITE_CHUNK)).offerTo(exporter,new Identifier(getRecipeName(ModItems.PYORITE_CHUNK)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHWRAPPEL,2).input(Items.IRON_NUGGET).input(Items.GUNPOWDER).criterion(hasItem(ModItems.SHWRAPPEL),conditionsFromItem(ModItems.SHWRAPPEL)).offerTo(exporter,new Identifier(getRecipeName(ModItems.SHWRAPPEL)));
     }
 }
