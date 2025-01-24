@@ -36,6 +36,7 @@ public class ModItems {
     public static final Item PYORITE_CHESTPLATE = registeritem( "pyorite_chestplate", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item PYORITE_LEGGINGS = registeritem( "pyorite_leggings", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item PURGATORER = registerItem("purgatorer", new Item(new FabricItemSettings().fireproof().rarity(Rarity.UNCOMMON)));
 
 
     public static void regModItems(){
