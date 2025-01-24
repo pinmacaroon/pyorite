@@ -29,7 +29,7 @@ public class ModLootTableModifiers {
             } else if (CREEPER_DROP.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f)) //ch in %
+                        .conditionally(RandomChanceLootCondition.builder(0.15f)) //ch in %
                         .with(ItemEntry.builder(ModItems.SHWRAPPEL))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 builder.pool(poolBuilder.build());
