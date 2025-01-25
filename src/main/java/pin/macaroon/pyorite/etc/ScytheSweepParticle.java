@@ -18,6 +18,6 @@ public class ScytheSweepParticle extends SpriteBillboardParticle {
     @Override
     public void tick() {
         super.tick();
-        this.setSprite(new Sprite(""));
+        //this.setSprite(new Sprite(""));
     }
 }
