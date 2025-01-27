@@ -18,6 +18,9 @@
 		"main": [
 			"pin.macaroon.pyorite.Pyorite"
 		],
+		"client": [
+			"pin.macaroon.pyorite.PyoriteClient"
+		],
 		"fabric-datagen": [
 			"pin.macaroon.pyorite.PyoriteDataGenerator"
 		]

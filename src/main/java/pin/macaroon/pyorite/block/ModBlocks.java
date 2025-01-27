@@ -21,7 +21,7 @@ import java.util.List;
 public class ModBlocks {
 
     public static final Block PIN_PLUSH = registerBlock("pin_plush",
-            new PinPlush(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
+            new PinPlush(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque().noCollision()));
 
     //HELPER METHODS BY KAUPENJOE
     private static Block registerBlock(String name, Block block, String tooltipKey) {

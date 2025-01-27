@@ -14,5 +14,7 @@
     "item.pyorite.creeper_cookie.lore": "hmm i dont.. *crunch* i.. have no ide- BOOM",
     "item.pyorite.aeroite": "Aeroite",
     "item.pyorite.handgun": "Hand Cannon",
-    "item.pyorite.purgatorer": "Purgatorer"
+    "item.pyorite.purgatorer": "Purgatorer",
+    "block.pyorite.pin_plush": "PinMacaroon™️ Squeaky Marketable Plush",
+    "sound.pyorite.plush_squeak": "Plush Squeaks"
 }

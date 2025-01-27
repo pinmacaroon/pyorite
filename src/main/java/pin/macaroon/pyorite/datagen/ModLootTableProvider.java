@@ -13,6 +13,7 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import pin.macaroon.pyorite.block.ModBlocks;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -21,7 +22,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        //addDrop(ModBlocks.DEEPSLATE_STEEL_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_STEEL_ORE, ModItems.RAW_STEEL));
+        addDrop(ModBlocks.PIN_PLUSH);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
