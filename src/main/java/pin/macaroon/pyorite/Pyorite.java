@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pin.macaroon.pyorite.block.ModBlocks;
 import pin.macaroon.pyorite.entity.ModEntities;
 import pin.macaroon.pyorite.entity.effect.ModStatusEffects;
 import pin.macaroon.pyorite.etc.ModParticles;
@@ -27,6 +28,6 @@ public class Pyorite implements ModInitializer {
 		ModStatusEffects.registerModEffects();
 		ModLootTableModifiers.modifyLootTables();
 		ModParticles.regParticles();
-
+		ModBlocks.registerModBlocks();
 	}
 }

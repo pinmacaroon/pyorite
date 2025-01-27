@@ -5,6 +5,7 @@ import net.minecraft.client.particle.SpriteBillboardParticle;
 import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.world.ClientWorld;
 
+@Deprecated
 public class ScytheSweepParticle extends SpriteBillboardParticle {
     protected ScytheSweepParticle(ClientWorld clientWorld, double d, double e, double f) {
         super(clientWorld, d, e, f);
@@ -18,6 +19,6 @@ public class ScytheSweepParticle extends SpriteBillboardParticle {
     @Override
     public void tick() {
         super.tick();
-        this.setSprite(new Sprite(""));
+        //this.setSprite(new Sprite(""));
     }
 }
