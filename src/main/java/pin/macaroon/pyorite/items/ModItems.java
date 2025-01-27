@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import pin.macaroon.pyorite.block.ModBlocks;
 import pin.macaroon.pyorite.items.custom.AerobladeItem;
 import pin.macaroon.pyorite.items.custom.GunItem;
 import pin.macaroon.pyorite.items.custom.LoreItem;
@@ -49,6 +50,7 @@ public class ModItems {
     }
 
     private static void addItemsToBuildingBlockItemGroup(FabricItemGroupEntries entries){
+        entries.addAfter(Items.YELLOW_WOOL, ModBlocks.PIN_PLUSH);
     }
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){

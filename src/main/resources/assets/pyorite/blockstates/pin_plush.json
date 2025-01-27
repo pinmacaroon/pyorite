@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "pyorite:block/pin_plush"},
+        "facing=east": { "model": "pyorite:block/pin_plush", "y": 90},
+        "facing=south": { "model": "pyorite:block/pin_plush", "y": 180},
+        "facing=west": { "model": "pyorite:block/pin_plush", "y": 270}
+    }
+}
