@@ -11,7 +11,6 @@ import net.minecraft.util.Rarity;
 import pin.macaroon.pyorite.block.ModBlocks;
 import pin.macaroon.pyorite.items.custom.AerobladeItem;
 import pin.macaroon.pyorite.items.custom.GunItem;
-import pin.macaroon.pyorite.items.custom.LoreItem;
 import pin.macaroon.pyorite.items.custom.SytheItem;
 import pin.macaroon.pyorite.Pyorite;
 
@@ -37,6 +36,7 @@ public class ModItems {
     public static final Item PYORITE_CHESTPLATE = registeritem( "pyorite_chestplate", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item PYORITE_LEGGINGS = registeritem( "pyorite_leggings", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item PRETTY_PINK_HEART = registeritem( "pretty_pink_heart", new Item(new FabricItemSettings()));
 
 
     public static void regModItems(){
@@ -58,6 +58,7 @@ public class ModItems {
         entries.addAfter(Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, ELEMENTITE_TEMPLATE);
         entries.addAfter(Items.GUNPOWDER, SHWRAPPEL);
         entries.addAfter(Items.REDSTONE, AEROITE);
+        entries.addAfter(AEROITE, PRETTY_PINK_HEART);
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){

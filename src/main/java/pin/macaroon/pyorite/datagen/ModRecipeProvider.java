@@ -12,10 +12,13 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
+import pin.macaroon.pyorite.block.ModBlocks;
 import pin.macaroon.pyorite.items.ModItems;
 
-import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -94,6 +97,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('f', Items.DROPPER)
                 .criterion(hasItem(ModItems.PYORITE_CHUNK), conditionsFromItem(ModItems.PYORITE_CHUNK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDGUN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PIN_PLUSH, 1)
+                .pattern(" b ")
+                .pattern("whw")
+                .pattern(" r ")
+                .input('b', Blocks.BLACK_WOOL)
+                .input('h', ModItems.PRETTY_PINK_HEART)
+                .input('r', Blocks.RED_WOOL)
+                .input('w', Ingredient.fromTag(ItemTags.WOOL))
+                .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PIN_PLUSH)));
 
 
         //TODO add normal crafting recipe for aeroblade

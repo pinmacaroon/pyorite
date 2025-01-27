@@ -9,6 +9,7 @@ import pin.macaroon.pyorite.entity.ModEntities;
 import pin.macaroon.pyorite.entity.effect.ModStatusEffects;
 import pin.macaroon.pyorite.etc.ModParticles;
 import pin.macaroon.pyorite.etc.ModSoundEvents;
+import pin.macaroon.pyorite.etc.ModTrades;
 import pin.macaroon.pyorite.items.ModItemTags;
 import pin.macaroon.pyorite.items.ModItems;
 import pin.macaroon.pyorite.items.ModLootTableModifiers;
@@ -31,5 +32,6 @@ public class Pyorite implements ModInitializer {
 		ModParticles.regParticles();
 		ModBlocks.registerModBlocks();
 		ModSoundEvents.regSounds();
+		ModTrades.regTrades();
 	}
 }
