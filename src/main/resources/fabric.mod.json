@@ -3,9 +3,9 @@
 	"id": "pyorite",
 	"version": "${version}",
 	"name": "Pyorite",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Super duper epic weapons mod",
 	"authors": [
-		"Me!"
+		"Pin, Boxed, Arch"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
