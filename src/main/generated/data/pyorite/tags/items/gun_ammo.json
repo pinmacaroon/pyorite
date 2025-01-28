@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pyorite:shwrappel"
+    "pyorite:shwrappel",
+    "minecraft:fire_charge"
   ]
 }
