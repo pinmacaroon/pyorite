@@ -8,6 +8,7 @@ import pin.macaroon.pyorite.Pyorite;
 
 public class ModSoundEvents {
     public static final SoundEvent PLUSH_SQUEAK = register("plush_squeak");
+    public static final SoundEvent PLUSH_YIPPEE = register("plush_yippee");
 
     public static void regSounds(){
         Pyorite.LOGGER.info("registering sounds.json");

@@ -4,5 +4,11 @@
         "sounds": [
             "pyorite:plush_squeak"
         ]
+    },
+    "plush_yippee": {
+        "subtitle": "sound.pyorite.plush_yippee",
+        "sounds": [
+            "pyorite:plush_yippee"
+        ]
     }
 }

@@ -71,7 +71,7 @@ public class BoxPlush extends Block {
             player.heal(2F);
         }
 
-        world.playSoundAtBlockCenter(pos, ModSoundEvents.PLUSH_SQUEAK, SoundCategory.BLOCKS, 1F, Random.create().nextFloat(), true);
+        world.playSoundAtBlockCenter(pos, ModSoundEvents.PLUSH_YIPPEE, SoundCategory.BLOCKS, 1F, 1F, true);
         return ActionResult.SUCCESS;
     }
 }
