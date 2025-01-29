@@ -1,5 +1,5 @@
 {
-  "parent": "pyorite:block/pin_plush",
+  "parent": "pyorite:block/box_plush",
   "display": {
     "gui": {
       "rotation": [180,0,180],

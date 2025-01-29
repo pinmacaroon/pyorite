@@ -17,6 +17,7 @@ public class PyoriteDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModAdvancementGenerator::new);
 	}
 
 	@Override

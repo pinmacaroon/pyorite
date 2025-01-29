@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pin.macaroon.pyorite.Pyorite;
+import pin.macaroon.pyorite.block.plush.BoxPlush;
 import pin.macaroon.pyorite.block.plush.PinPlush;
 
 import java.util.List;
@@ -22,6 +23,8 @@ public class ModBlocks {
 
     public static final Block PIN_PLUSH = registerBlock("pin_plush",
             new PinPlush(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque().noCollision()));
+    public static final Block BOX_PLUSH = registerBlock("box_plush",
+            new BoxPlush(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque().noCollision()));
 
     //HELPER METHODS BY KAUPENJOE
     private static Block registerBlock(String name, Block block, String tooltipKey) {

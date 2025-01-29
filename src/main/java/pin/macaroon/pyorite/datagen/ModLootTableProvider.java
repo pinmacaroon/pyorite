@@ -23,6 +23,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PIN_PLUSH);
+        addDrop(ModBlocks.BOX_PLUSH);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

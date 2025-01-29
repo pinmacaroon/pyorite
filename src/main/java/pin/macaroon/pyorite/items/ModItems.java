@@ -46,10 +46,15 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModItems::addItemsToColouredBlockItemGroup);
     }
 
     private static void addItemsToBuildingBlockItemGroup(FabricItemGroupEntries entries){
-        entries.addAfter(Items.YELLOW_WOOL, ModBlocks.PIN_PLUSH);
+    }
+
+    private static void addItemsToColouredBlockItemGroup(FabricItemGroupEntries entries){
+        entries.addAfter(Items.PINK_BED, ModBlocks.PIN_PLUSH);
+        entries.addAfter(ModBlocks.PIN_PLUSH, ModBlocks.BOX_PLUSH);
     }
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){
