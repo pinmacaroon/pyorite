@@ -3,7 +3,7 @@
 	"id": "pyorite",
 	"version": "${version}",
 	"name": "Pyorite",
-	"description": "Super duper epic weapons mod",
+	"description": "Mod that adds mainly combat based items and features.",
 	"authors": [
 		"Pin, Boxed, Arch"
 	],
