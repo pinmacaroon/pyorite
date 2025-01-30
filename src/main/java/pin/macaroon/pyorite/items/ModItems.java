@@ -37,7 +37,7 @@ public class ModItems {
     public static final Item PYORITE_LEGGINGS = registeritem( "pyorite_leggings", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item PRETTY_PINK_HEART = registeritem( "pretty_pink_heart", new Item(new FabricItemSettings()));
-    public static final Item PIN = registerItem( "pin", new SwordItem(ModToolMaterial.HOLY, 5, -3F, new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON)));
+
 
 
     public static void regModItems(){
