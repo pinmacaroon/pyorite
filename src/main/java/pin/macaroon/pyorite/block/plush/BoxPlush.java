@@ -63,7 +63,7 @@ public class BoxPlush extends Block {
                 double d = this.random.nextGaussian() * 0.02;
                 double e = this.random.nextGaussian() * 0.02;
                 double f = this.random.nextGaussian() * 0.02;
-                world.addParticle(ParticleTypes.HAPPY_VILLAGER, player.getParticleX(1.0), player.getRandomBodyY() + 0.5, player.getParticleZ(1.0), d, e, f);
+                world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, player.getParticleX(1.0), player.getRandomBodyY() + 0.5, player.getParticleZ(1.0), d, e, f);
             }
         }
 
