@@ -99,22 +99,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HANDGUN)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PIN_PLUSH, 1)
-                .pattern(" b ")
-                .pattern("whw")
-                .pattern(" r ")
-                .input('b', Blocks.BLACK_WOOL)
+                .pattern("bbb")
+                .pattern("fhf")
+                .pattern("wpw")
+                .input('b', Blocks.BROWN_WOOL)
                 .input('h', ModItems.PRETTY_PINK_HEART)
-                .input('r', Blocks.RED_WOOL)
-                .input('w', Ingredient.fromTag(ItemTags.WOOL))
+                .input('f', Blocks.BLACK_WOOL)
+                .input('w', Blocks.WHITE_WOOL)
+                .input('p', Blocks.RED_WOOL)
                 .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PIN_PLUSH)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BOX_PLUSH, 1)
+                .pattern("bbb")
+                .pattern("yhy")
+                .pattern("wpw")
+                .input('b', Blocks.BROWN_WOOL)
+                .input('h', ModItems.PRETTY_PINK_HEART)
+                .input('y', Blocks.YELLOW_WOOL)
+                .input('w', Blocks.BLUE_WOOL)
+                .input('p', Blocks.GREEN_WOOL)
+                .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BOX_PLUSH)));
 
-        //TODO add normal crafting recipe for aeroblade
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ARCH_PLUSH, 1)
+                .pattern("bbg")
+                .pattern("bhg")
+                .pattern("w#w")
+                .input('b', Blocks.BROWN_WOOL)
+                .input('h', ModItems.PRETTY_PINK_HEART)
+                .input('w', Blocks.WHITE_WOOL)
+                .input('#', Blocks.BLACK_WOOL)
+                .input('g', Blocks.GREEN_WOOL)
+                .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ARCH_PLUSH)));
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AEROBLADE, 1)
-                .pattern(" I ")
+                .pattern("IA")
                 .input('I', Items.IRON_SWORD)
-                .criterion(hasItem(Items.IRON_SWORD), conditionsFromItem(Items.IRON_SWORD))
+                .input('A', ModItems.AEROITE)
+                .criterion(hasItem(ModItems.AEROITE), conditionsFromItem(ModItems.AEROITE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.AEROBLADE)));
 
         /*

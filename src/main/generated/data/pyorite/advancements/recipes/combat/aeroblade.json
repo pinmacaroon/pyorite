@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_sword": {
+    "has_aeroite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_sword"
+              "pyorite:aeroite"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_iron_sword",
+      "has_aeroite",
       "has_the_recipe"
     ]
   ],

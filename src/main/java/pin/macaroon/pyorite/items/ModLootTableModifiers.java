@@ -17,6 +17,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "entities/creeper");
     private  static final Identifier ENDERDUDE_DROP =
             new Identifier("minecraft", "entities/enderman");
+    private  static final Identifier TRESUR_CEST =
+            new Identifier("minecraft", "chests/buried_treasure");
 
 
     public static void modifyLootTables() {
@@ -40,6 +42,13 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.05f)) //ch in %
                         .with(ItemEntry.builder(ModItems.PRETTY_PINK_HEART))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                builder.pool(poolBuilder.build());
+            } else if (TRESUR_CEST.equals(identifier)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f)) //ch in %
+                        .with(ItemEntry.builder(ModItems.AEROITE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 builder.pool(poolBuilder.build());
             }
