@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "pyorite:block/arch_plush"},
+        "facing=east": { "model": "pyorite:block/arch_plush", "y": 90},
+        "facing=south": { "model": "pyorite:block/arch_plush", "y": 180},
+        "facing=west": { "model": "pyorite:block/arch_plush", "y": 270}
+    }
+}

@@ -55,6 +55,7 @@ public class ModItems {
     private static void addItemsToColouredBlockItemGroup(FabricItemGroupEntries entries){
         entries.addAfter(Items.PINK_BED, ModBlocks.PIN_PLUSH);
         entries.addAfter(ModBlocks.PIN_PLUSH, ModBlocks.BOX_PLUSH);
+        entries.addAfter(ModBlocks.BOX_PLUSH, ModBlocks.ARCH_PLUSH);
     }
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){

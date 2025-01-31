@@ -1,14 +1,14 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "pyorite:block/plush/box/texture_box",
-		"2": "pyorite:block/plush/box/texture2",
-		"3": "pyorite:block/plush/box/body_texture",
-		"4": "pyorite:block/plush/box/body_outer_texture",
-		"5": "pyorite:block/plush/box/arm1",
-		"7": "pyorite:block/plush/box/leg1",
-		"8": "pyorite:block/plush/box/leg2",
-		"particle": "pyorite:block/plush/box/leg2"
+		"1": "pyorite:block/plush/arch/texture_arch",
+		"2": "pyorite:block/plush/arch/texture2",
+		"3": "pyorite:block/plush/arch/body_texture",
+		"4": "pyorite:block/plush/arch/body_outer_texture",
+		"5": "pyorite:block/plush/arch/arm1",
+		"7": "pyorite:block/plush/arch/leg1",
+		"8": "pyorite:block/plush/arch/leg2",
+		"particle": "pyorite:block/plush/arch/leg2"
 	},
 	"elements": [
 		{

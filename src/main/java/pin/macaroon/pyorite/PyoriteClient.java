@@ -20,6 +20,7 @@ public class PyoriteClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.SCYTHE_SWEEP, SweepAttackParticle.Factory::new);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PIN_PLUSH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BOX_PLUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ARCH_PLUSH, RenderLayer.getCutout());
         //ParticleFactoryRegistry.getInstance().register(, EndRodParticle.Factory::new);
     }
 }
