@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="mc.css">
+    <script>
+        async function main() {
+            let rsp = await fetch("https://api.modrinth.com/v2/project/IYa8MJN1");
+            let data = await rsp.json();
+            setTimeout(function(){}, 500)
+            data = JSON.stringify(data);
+            data = JSON.parse(data);
+            console.log(data);
+            document.getElementById("download_count_span").innerHTML = data["downloads"];
+            document.getElementById("like_count_span").innerHTML = data["followers"];
+            document.getElementById("download_button").onclick = function () {
+                window.open('https://modrinth.com/mod/pyorite/version/' + data["versions"][data["versions"].length - 1], '_blank').focus()
+            };
+            let image_obj = data["gallery"][Math.floor(Math.random() * data["gallery"].length + 1)];
+            document.getElementById("showcase_img").src = image_obj["raw_url"];
+            if(image_obj["title"] == null){
+                document.getElementById("gallery_title_span").innerHTML = "untitled";
+                document.getElementById("gallery_descr_span").innerHTML = "un-descriptioned";
+            } else {
+                document.getElementById("gallery_title_span").innerHTML = image_obj["title"];
+                document.getElementById("gallery_descr_span").innerHTML = image_obj["description"];
+            }
+        }
+        main();
+        var project;
+    </script>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="https://pinmac.neocities.org/index.html">index</a></li>
+        <li><a href="https://pinmac.neocities.org/contact.html">contact</a></li>
+        <li><a href="https://pinmac.neocities.org/stuff.html">stuff</a></li>
+    </ul>
+    <div class="body_main">
+        <h1><img class="item" src="items/pyorite_chunk.png" title="pyorite chunk">Pyorite</h1>
+        <h2>weapon and misc mod, passion project by <b>BoxedBoi</b> (creative director, developer) and <b>pin</b> (developer, nerd)</h2>
+        <h3><b>looking for the recipes?</b> <a href="wiki.html">click here!</a></h3>
+        <h3><b>looking for the devlog?</b> <a href="devlog.html">click here!</a></h3>
+        <hr>
+        <p>the mod is for <b>fabric</b> loader, minecraft version <b>1.20.1</b></p>
+        <p>features include:</p>
+        <ul>
+            <li>new material with its own armor set</li>
+            <li>multiple new close-range swords</li>
+            <li>long range weapon</li>
+            <li>decorational blocks</li>
+        </ul>
+        <p>interested? download now from modrinth!</p>
+        <p></p><button onclick="" id="download_button">download latest</button> <span style="color: red;">&lt;-</span>
+        <span style="color: yellow;" id="download_count_span">[#]</span> already downloaded, <span
+            style="color: yellow;" id="like_count_span">[#]</span> follows! <br><sup style="color: lightgreen;">this
+            data is
+            automatically fetched via the modrinth api!</sup></p>
+        <hr>
+        <p>random image from the image gallery:</p>
+        <img class="gallery" id="showcase_img" src="">
+        <p>title: <i><span id="gallery_title_span">[""]</span></i>, description: <i><span
+                    id="gallery_descr_span">[""]</span></i></p>
+        <hr>
+        <p>this site needs <b>JavaScript enabled</b> to be able to work!</p>
+        <p>have questions? <a href="https://pinmac.neocities.org/contact.html">contact me!</a></p>
+    </div>
+</body>
+
+</html>

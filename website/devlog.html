@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="mc.css">
+    <script>
+        async function main() {
+            let rsp = await fetch("https://api.modrinth.com/v2/project/IYa8MJN1/version");
+            let data = await rsp.json();
+            setTimeout(function () { }, 500)
+            data = JSON.stringify(data);
+            data = JSON.parse(data);
+            console.log(data);
+
+            upd0 = data[0]
+
+            document.getElementById("update_name_span").innerHTML = upd0["name"]
+            document.getElementById("update_mcver_span").innerHTML = ""
+            for (let i = 0; i < upd0["game_versions"].length; i++) {
+                document.getElementById("update_mcver_span").innerHTML =
+                    document.getElementById("update_mcver_span").innerHTML
+                    + upd0["game_versions"][i] + ", ";
+            }
+            document.getElementById("update_loader_span").innerHTML = ""
+            for (let i = 0; i < upd0["loaders"].length; i++) {
+                document.getElementById("update_loader_span").innerHTML =
+                    document.getElementById("update_loader_span").innerHTML
+                    + upd0["loaders"][i] + ", ";
+            }
+            document.getElementById("update_vernum_span").innerHTML = upd0["version_number"];
+            let tst = new Date(upd0["date_published"])
+            document.getElementById("update_date_span").innerHTML = tst.toLocaleString()
+            document.getElementById("update_downloads_span").innerHTML = upd0["downloads"]
+            document.getElementById("update_channel_span").innerHTML = upd0["version_type"]
+            document.getElementById("update_jar_a").href = upd0["files"][0]["url"]
+            document.getElementById("update_jar_a").innerHTML = upd0["files"][0]["filename"]
+            document.getElementById("update_changelog_md").innerHTML = upd0["changelog"]
+
+            renderMarkdown();
+        }
+        main();
+        var project;
+    </script>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="https://pinmac.neocities.org/index.html">index</a></li>
+        <li><a href="https://pinmac.neocities.org/contact.html">contact</a></li>
+        <li><a href="https://pinmac.neocities.org/stuff.html">stuff</a></li>
+    </ul>
+    <div class="body_main">
+        <h1><img class="item" src="items/pyorite_chunk.png" title="pyorite chunk">Pyorite</h1>
+        <h2>devlog and update log</h2>
+        <h3><b>looking for the recipes?</b> <a href="wiki.html">click here!</a></h3>
+        <h3><b>looking for the main page?</b> <a href="index.html">click here!</a></h3>
+        <hr>
+        <h3>latest update: <b><span id="update_name_span">[""]</span></b></h3>
+        <p>recommended versions: <i><span id="update_mcver_span">[""]</span></i><br>
+            recommended loaders: <i><span id="update_loader_span">[""]</span></i><br>
+            version number: <i><span id="update_vernum_span">[""]</span></i><br>
+            uploaded at: <i><span id="update_date_span">[""]</span></i><br>
+            downloads of this release: <i><span id="update_downloads_span">[""]</span></i><br>
+            channel: <i><span id="update_channel_span">[""]</span></i><br>
+            primary file link: <i><a id="update_jar_a" href="about:blank" target="_blank">[""]</a></i>
+        </p>
+        <md id="update_changelog_md">
+*["markdown"]*
+        </md><sup style="color: lightgreen;">this
+            data is
+            automatically fetched via the modrinth api!</sup>
+        <hr>
+        <p>this site needs <b>JavaScript enabled</b> to be able to work!</p>
+        <p>this site uses <i>MarketingPipeline</i>'s <a
+                href="https://github.com/MarketingPipeline/Markdown-Tag">Markdown-Tag</a> (really epic, i love it so
+            much)</p>
+        <p>have questions? <a href="/contact.html">contact me!</a></p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>
+
+</html>
