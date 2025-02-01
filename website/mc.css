@@ -1,0 +1,114 @@
+@font-face { font-family: Minecraft; src: url('Minecraft.otf');}
+html {
+    background-image: url(stone.png);
+    background-size: 54px;
+    image-rendering: pixelated;
+    color: white;
+    font-family: Minecraft;
+    text-shadow: 2px 2px black;
+}
+a {
+    color:aqua;
+}
+button {
+    background-image: url(stone.png);
+    background-size: 54px;
+    cursor: pointer;
+    color: white;
+    font-family: Minecraft;
+    text-shadow: 2px 2px black;
+}
+table.crafting{
+    background-image: url(stone.png);
+    background-size: 54px;
+    border-style: inset;
+    border-collapse: collapse;
+}
+td.crafting {
+    border-style: groove;
+    border-color: gray;
+    border-collapse: collapse;
+    padding: 5;
+}
+
+ul.navbar {
+    background-image: url(stone.png);
+    background-size: 54px;
+    position: fixed;
+    border: 3px;
+    border-style: inset;
+    border-color: gray;
+    top: 0;
+    width: 100%;
+    background-color: gray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar li {
+    float: left;
+    margin: 3px;
+}
+
+ul.navbar li.special {
+    float: right;
+    margin: 3px;
+}
+
+ul.navbar li:hover {
+    color: white;
+}
+
+ul.navbar li a {
+    color: inherit;
+}
+
+div.body_main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    border-style: outset;
+    border-color: black;
+    background-image: url(dirt.png);
+    background-size: 54px;
+}
+
+img.item {
+    height: 32;
+    cursor: pointer;
+}
+
+img.item:hover{
+    background-color: rgba(138, 138, 138, 0.486);
+}
+ul{
+    list-style-image: url(diamond.png);
+}
+b {
+    color: yellow;
+}
+i {
+    color: lightgreen;
+}
+
+img.gallery {
+    height: 300;
+    border-style: inset;
+    margin: 10;
+    image-rendering: auto;
+    background-image: url(stone.png);
+    background-size: 54px;
+}
+
+code {
+    background-color: black;
+    color: white;
+    font-family: Minecraft;
+    text-shadow: none;
+    padding: 5;
+    font-size: 75%;
+    text-decoration: none;
+}
