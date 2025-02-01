@@ -152,12 +152,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
          */
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PYORITE_CHUNK,1).input(Items.IRON_INGOT).input(Items.NETHERITE_SCRAP).criterion(hasItem(ModItems.PYORITE_CHUNK),conditionsFromItem(ModItems.PYORITE_CHUNK)).offerTo(exporter,new Identifier(getRecipeName(ModItems.PYORITE_CHUNK)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PYORITE_CHUNK,1)
+                .input(Items.IRON_INGOT)
+                .input(Items.NETHERITE_SCRAP)
+                .criterion(hasItem(ModItems.PYORITE_CHUNK)
+                        ,conditionsFromItem(ModItems.PYORITE_CHUNK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.PYORITE_CHUNK)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHWRAPPEL,2).input(Items.IRON_NUGGET).input(Items.GUNPOWDER).criterion(hasItem(ModItems.SHWRAPPEL),conditionsFromItem(ModItems.SHWRAPPEL)).offerTo(exporter,new Identifier(getRecipeName(ModItems.SHWRAPPEL)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHWRAPPEL,2)
+                .input(Items.IRON_NUGGET)
+                .input(Items.GUNPOWDER)
+                .criterion(hasItem(ModItems.SHWRAPPEL)
+                        ,conditionsFromItem(ModItems.SHWRAPPEL))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.SHWRAPPEL)));
 
 
         offerCustomUpgradeRecipe(exporter, Items.NETHERITE_HOE, RecipeCategory.COMBAT, ModItems.SYTHE, ModItems.ELEMENTITE_TEMPLATE, ModItems.ELEMENTITE);
+        offerCustomUpgradeRecipe(exporter, Items.DIAMOND_BOOTS, RecipeCategory.COMBAT, ModItems.PYORITE_BOOTS, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.PYORITE_CHUNK);
+        offerCustomUpgradeRecipe(exporter, Items.DIAMOND_LEGGINGS, RecipeCategory.COMBAT, ModItems.PYORITE_LEGGINGS, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.PYORITE_CHUNK);
+        offerCustomUpgradeRecipe(exporter, Items.DIAMOND_CHESTPLATE, RecipeCategory.COMBAT, ModItems.PYORITE_CHESTPLATE, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.PYORITE_CHUNK);
+        offerCustomUpgradeRecipe(exporter, Items.DIAMOND_HELMET, RecipeCategory.COMBAT, ModItems.PYORITE_HELMET, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.PYORITE_CHUNK);
     }
 
     public static void offerCustomUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category, Item result, Item template, Item material) {
