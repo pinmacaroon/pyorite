@@ -9,6 +9,7 @@ import pin.macaroon.pyorite.Pyorite;
 public class ModStatusEffects {
 
     public static final StatusEffect EXPLOSIVE = registerEffect("explosive", new ExplosiveStatusEffect());
+    public static final StatusEffect FREEZING = registerEffect("freezing", new FreezingEffect());
 
     private static StatusEffect registerEffect(String name, StatusEffect statusEffect){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(Pyorite.MOD_ID, name), statusEffect);
