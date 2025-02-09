@@ -1,0 +1,268 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "pyorite:item/mailce/mailce",
+		"3": "pyorite:item/mailce/texture",
+		"particle": "sigam/texture"
+	},
+	"elements": [
+		{
+			"name": "Mailce_11",
+			"from": [4.5, 4, 0],
+			"to": [5, 5.5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [7.5, 7, 7, 8.5], "texture": "#1"},
+				"east": {"uv": [7, 7, 7.5, 8.5], "texture": "#1"},
+				"south": {"uv": [7, 7, 7.5, 8.5], "texture": "#1"},
+				"west": {"uv": [7, 7.5, 7.5, 9], "texture": "#1"},
+				"up": {"uv": [7, 7.5, 7.5, 8], "texture": "#1"},
+				"down": {"uv": [7, 8, 7.5, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_12",
+			"from": [4, 3.5, 0],
+			"to": [4.5, 5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 6.5, 9], "texture": "#1"},
+				"east": {"uv": [6.5, 7.5, 7, 9], "texture": "#1"},
+				"south": {"uv": [6.5, 7.5, 7, 9], "texture": "#1"},
+				"west": {"uv": [6.5, 8, 7, 9.5], "texture": "#1"},
+				"up": {"uv": [6.5, 8, 7, 8.5], "texture": "#1"},
+				"down": {"uv": [6.5, 8.5, 7, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_13",
+			"from": [3.5, 3, 0],
+			"to": [4, 4.5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [6.5, 8, 6, 9.5], "texture": "#1"},
+				"east": {"uv": [6, 8, 6.5, 9.5], "texture": "#1"},
+				"south": {"uv": [6, 8, 6.5, 9.5], "texture": "#1"},
+				"west": {"uv": [6, 8.5, 6.5, 10], "texture": "#1"},
+				"up": {"uv": [6, 8.5, 6.5, 9], "texture": "#1"},
+				"down": {"uv": [6, 9, 6.5, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_14",
+			"from": [3, 2.5, 0],
+			"to": [3.5, 4, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [6, 8.5, 5.5, 10], "texture": "#1"},
+				"east": {"uv": [5.5, 8.5, 6, 10], "texture": "#1"},
+				"south": {"uv": [5.5, 8.5, 6, 10], "texture": "#1"},
+				"west": {"uv": [5.5, 9, 6, 10.5], "texture": "#1"},
+				"up": {"uv": [5.5, 9, 6, 9.5], "texture": "#1"},
+				"down": {"uv": [5.5, 9.5, 6, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_15",
+			"from": [2.5, 2, 0],
+			"to": [3, 3.5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [5.5, 9, 5, 10.5], "texture": "#1"},
+				"east": {"uv": [5, 9, 5.5, 10.5], "texture": "#1"},
+				"south": {"uv": [5, 9, 5.5, 10.5], "texture": "#1"},
+				"west": {"uv": [5, 9.5, 5.5, 10.5], "texture": "#1"},
+				"up": {"uv": [5, 9.5, 5.5, 10], "texture": "#1"},
+				"down": {"uv": [5, 10, 5.5, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_17",
+			"from": [2, 1.5, 0],
+			"to": [2.5, 3, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [5, 9.5, 4.5, 11], "texture": "#1"},
+				"east": {"uv": [4.5, 9.5, 5, 11], "texture": "#1"},
+				"south": {"uv": [4.5, 9.5, 5, 11], "texture": "#1"},
+				"west": {"uv": [4.5, 10, 5, 11], "texture": "#1"},
+				"up": {"uv": [4.5, 10, 5, 10.5], "texture": "#1"},
+				"down": {"uv": [4.5, 10.5, 5, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_19",
+			"from": [1.5, 1, 0],
+			"to": [2, 2.5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [4.5, 10, 4, 11.5], "texture": "#1"},
+				"east": {"uv": [4, 10.5, 4.5, 11.5], "texture": "#1"},
+				"south": {"uv": [4, 10, 4.5, 11.5], "texture": "#1"},
+				"west": {"uv": [4, 10.5, 4.5, 11.5], "texture": "#1"},
+				"up": {"uv": [4, 10.5, 4.5, 10.5], "texture": "#1"},
+				"down": {"uv": [4, 11, 4.5, 11.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_20",
+			"from": [1, 0.5, 0],
+			"to": [1.5, 2, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [4, 10.5, 3.5, 12], "texture": "#1"},
+				"east": {"uv": [3.5, 10.5, 4, 12], "texture": "#1"},
+				"south": {"uv": [3.5, 10.5, 4, 12], "texture": "#1"},
+				"west": {"uv": [3.5, 10.5, 4, 12], "texture": "#1"},
+				"up": {"uv": [3.5, 10.5, 4, 11], "texture": "#1"},
+				"down": {"uv": [3.5, 11.5, 4, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_21",
+			"from": [0.5, 0, 0],
+			"to": [1, 1.5, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [3.5, 11, 3, 12.5], "texture": "#1"},
+				"east": {"uv": [3, 11, 3.5, 12.5], "texture": "#1"},
+				"south": {"uv": [3, 11, 3.5, 12.5], "texture": "#1"},
+				"west": {"uv": [3, 11, 3.5, 12.5], "texture": "#1"},
+				"up": {"uv": [3, 11, 3.5, 11.5], "texture": "#1"},
+				"down": {"uv": [3, 12, 3.5, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Mailce_22",
+			"from": [0, 0, 0],
+			"to": [0.5, 1, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.5, -3.5, 0]},
+			"faces": {
+				"north": {"uv": [3, 11.5, 2.5, 12.5], "texture": "#1"},
+				"east": {"uv": [2.5, 11.5, 3, 12.5], "texture": "#1"},
+				"south": {"uv": [2.5, 11.5, 3, 12.5], "texture": "#1"},
+				"west": {"uv": [2.5, 11.5, 3, 12.5], "texture": "#1"},
+				"up": {"uv": [2.5, 11.5, 3, 12], "texture": "#1"},
+				"down": {"uv": [2.5, 12, 3, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [1.75, 4.25, -1.25],
+			"to": [7.75, 7.25, 1.75],
+			"rotation": {"angle": -45, "axis": "z", "origin": [5.5, 4.5, 0]},
+			"faces": {
+				"north": {"uv": [1.5, 1.5, 4.5, 3], "texture": "#3"},
+				"east": {"uv": [0, 1.5, 1.5, 3], "texture": "#3"},
+				"south": {"uv": [6, 1.5, 9, 3], "texture": "#3"},
+				"west": {"uv": [4.5, 1.5, 6, 3], "texture": "#3"},
+				"up": {"uv": [4.5, 1.5, 1.5, 0], "texture": "#3"},
+				"down": {"uv": [7.5, 0, 4.5, 1.5], "texture": "#3"}
+			}
+		},
+		{
+			"from": [-6.5, 14.5, 1.75],
+			"to": [-4.5, 16.5, 1.75],
+			"rotation": {"angle": -45, "axis": "z", "origin": [-10.5, -3.5, -8]},
+			"faces": {
+				"north": {"uv": [0, 3.5, 1, 4.5], "texture": "#3"},
+				"east": {"uv": [0, 3.5, 0, 4.5], "texture": "#3"},
+				"south": {"uv": [1, 3.5, 2, 4.5], "texture": "#3"},
+				"west": {"uv": [1, 3.5, 1, 4.5], "texture": "#3"},
+				"up": {"uv": [1, 3.5, 0, 3.5], "texture": "#3"},
+				"down": {"uv": [2, 3.5, 1, 3.5], "texture": "#3"}
+			}
+		},
+		{
+			"from": [-5.5, 16.5, 1.75],
+			"to": [-4.5, 18.5, 1.75],
+			"rotation": {"angle": -45, "axis": "z", "origin": [-10.5, -3.5, -8]},
+			"faces": {
+				"north": {"uv": [2.5, 3.5, 3, 4.5], "texture": "#3"},
+				"east": {"uv": [2.5, 3.5, 2.5, 4.5], "texture": "#3"},
+				"south": {"uv": [3, 3.5, 3.5, 4.5], "texture": "#3"},
+				"west": {"uv": [3, 3.5, 3, 4.5], "texture": "#3"},
+				"up": {"uv": [3, 3.5, 2.5, 3.5], "texture": "#3"},
+				"down": {"uv": [3.5, 3.5, 3, 3.5], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Mailce",
+			"origin": [8, 0, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [
+				0,
+				-90,
+				40
+			],
+			"translation": [
+				10.0,
+				10.0,
+				0.0
+			],
+			"scale": [
+                2.0,
+                2.0,
+                2.0
+			]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [
+				0,
+				90,
+				-40
+			],
+			"translation": [
+				10.0,
+				10.0,
+				0.0
+			],
+			"scale": [
+                2.0,
+                2.0,
+                2.0
+			]
+		},
+		"firstperson_righthand": {
+			"rotation": [
+				0,
+				-90,
+				25
+			],
+			"translation": [
+				1.13,
+				3.2,
+				1.13
+			],
+			"scale": [
+				1.02,
+				1.02,
+				1.02
+			]
+		},
+		"firstperson_lefthand": {
+			"rotation": [
+				0,
+				90,
+				-25
+			],
+			"translation": [
+				1.13,
+				3.2,
+				1.13
+			],
+			"scale": [
+				1.02,
+				1.02,
+				1.02
+			]
+		}
+    }
+  }
