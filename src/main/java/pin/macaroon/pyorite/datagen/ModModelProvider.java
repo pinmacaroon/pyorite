@@ -34,5 +34,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_CHESTPLATE ));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_LEGGINGS ));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_BOOTS ));
+        //itemModelGenerator.register(ModItems.MAILCE, Models.HANDHELD);
     }
 }

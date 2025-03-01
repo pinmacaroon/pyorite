@@ -9,10 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import pin.macaroon.pyorite.block.ModBlocks;
-import pin.macaroon.pyorite.items.custom.AerobladeItem;
-import pin.macaroon.pyorite.items.custom.GunItem;
-import pin.macaroon.pyorite.items.custom.IceSwordItem;
-import pin.macaroon.pyorite.items.custom.SytheItem;
+import pin.macaroon.pyorite.items.custom.*;
 import pin.macaroon.pyorite.Pyorite;
 
 public class ModItems {
@@ -39,7 +36,7 @@ public class ModItems {
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item PRETTY_PINK_HEART = registeritem( "pretty_pink_heart", new Item(new FabricItemSettings()));
     public static final Item ICE_SWORD = registerItem("popsicle", new IceSwordItem(ModToolMaterial.ICE, 3, 3, new FabricItemSettings()));
-    public static final Item MAILCE = registerItem("mailce", new SwordItem(ToolMaterials.IRON, 3, 3, new FabricItemSettings()));
+    public static final Item MAILCE = registerItem("mailce", new MailceItem(ToolMaterials.IRON, new FabricItemSettings().maxDamage(128)));
 
 
     public static void regModItems(){

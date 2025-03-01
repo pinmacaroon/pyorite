@@ -19,6 +19,7 @@ import net.minecraft.util.Identifier;
 import pin.macaroon.pyorite.block.ModBlocks;
 import pin.macaroon.pyorite.items.ModItems;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -29,7 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
     //private static final List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.RAW_STEEL, ModBlocks.RAW_STEEL_BLOCK, ModBlocks.DEEPSLATE_STEEL_ORE);
-
+    private static final List<ItemConvertible> ICES = List.of(Blocks.ICE, Blocks.BLUE_ICE, Blocks.FROSTED_ICE, Blocks.PACKED_ICE);
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 
@@ -121,6 +122,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('p', Blocks.GREEN_WOOL)
                 .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BOX_PLUSH)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_SWORD, 1)
+                .pattern("i")
+                .pattern("i")
+                .pattern("s")
+                .input('i', Ingredient.ofItems(Blocks.ICE, Blocks.BLUE_ICE, Blocks.FROSTED_ICE, Blocks.PACKED_ICE))
+                .input('s', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ICE_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAILCE, 1)
+                .pattern("i")
+                .pattern("s")
+                .pattern("s")
+                .input('i', Blocks.IRON_BLOCK)
+                .input('s', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAILCE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ARCH_PLUSH, 1)
                 .pattern("bbg")

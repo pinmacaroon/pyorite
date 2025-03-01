@@ -39,8 +39,7 @@ public class IceSwordItem extends SwordItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if(entity.getWorld().getBiome(entity.getBlockPos()).value().getTemperature() <= 0.2F){
-            Pyorite.LOGGER.info("ice sword item inventory tick");
+        if(entity.getWorld().getBiome(entity.getBlockPos()).value().getTemperature() <= 0.2F && selected){
             entity.setInPowderSnow(false);
         }
         super.inventoryTick(stack, world, entity, slot, selected);

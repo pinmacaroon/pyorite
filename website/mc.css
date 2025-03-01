@@ -96,6 +96,7 @@ i {
 
 img.gallery {
     height: 300;
+    width: auto;
     border-style: inset;
     margin: 10;
     image-rendering: auto;

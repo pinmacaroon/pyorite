@@ -9,15 +9,15 @@ import pin.macaroon.pyorite.datagen.*;
 public class PyoriteDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+        FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(ModModelProvider::new);
-		pack.addProvider(ModBlockTagProvider::new);
-		pack.addProvider(ModWorldGenerator::new);
-		pack.addProvider(ModLootTableProvider::new);
-		pack.addProvider(ModRecipeProvider::new);
-		pack.addProvider(ModItemTagProvider::new);
-		pack.addProvider(ModAdvancementGenerator::new);
+        pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModBlockTagProvider::new);
+        pack.addProvider(ModWorldGenerator::new);
+        pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModItemTagProvider::new);
+        pack.addProvider(ModAdvancementGenerator::new);
 	}
 
 	@Override
