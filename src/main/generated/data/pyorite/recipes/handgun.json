@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "f": {
+      "item": "minecraft:dropper"
+    },
+    "p": {
+      "item": "pyorite:pyorite_chunk"
+    },
+    "s": {
+      "item": "minecraft:flint_and_steel"
+    }
+  },
+  "pattern": [
+    "f  ",
+    " p ",
+    "  s"
+  ],
+  "result": {
+    "item": "pyorite:handgun"
+  },
+  "show_notification": true
+}

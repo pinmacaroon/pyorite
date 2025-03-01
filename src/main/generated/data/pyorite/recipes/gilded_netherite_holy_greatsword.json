@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "f": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "g": {
+      "item": "minecraft:raw_gold_block"
+    },
+    "n": {
+      "item": "minecraft:netherite_block"
+    },
+    "r": {
+      "item": "minecraft:raw_gold"
+    }
+  },
+  "pattern": [
+    "r n",
+    "fng",
+    "bfr"
+  ],
+  "result": {
+    "item": "pyorite:gilded_netherite_holy_greatsword"
+  },
+  "show_notification": true
+}

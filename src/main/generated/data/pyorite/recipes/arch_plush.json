@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:black_wool"
+    },
+    "b": {
+      "item": "minecraft:brown_wool"
+    },
+    "g": {
+      "item": "minecraft:green_wool"
+    },
+    "h": {
+      "item": "pyorite:pretty_pink_heart"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "bbg",
+    "bhg",
+    "w#w"
+  ],
+  "result": {
+    "item": "pyorite:arch_plush"
+  },
+  "show_notification": true
+}
