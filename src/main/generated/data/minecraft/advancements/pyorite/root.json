@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "plush_got": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pyorite:pin_plush"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.pyorite.plush_adv.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "pyorite:pretty_pink_heart"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.pyorite.plush_adv.title"
+    }
+  },
+  "requirements": [
+    [
+      "plush_got"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
