@@ -36,7 +36,7 @@ public class ModItems {
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item PRETTY_PINK_HEART = registeritem( "pretty_pink_heart", new Item(new FabricItemSettings()));
     public static final Item ICE_SWORD = registerItem("popsicle", new IceSwordItem(ModToolMaterial.ICE, 3, 3, new FabricItemSettings()));
-    public static final Item MAILCE = registerItem("mailce", new MailceItem(ToolMaterials.IRON, new FabricItemSettings().maxDamage(128)));
+    //public static final Item MAILCE = registerItem("mailce", new MailceItem(ToolMaterials.IRON, new FabricItemSettings().maxDamage(128)));
 
 
     public static void regModItems(){
