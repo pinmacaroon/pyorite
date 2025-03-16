@@ -87,6 +87,7 @@ public class ModItems {
         entries.addAfter(PYORITE_LEGGINGS, PYORITE_BOOTS);
 
         entries.addAfter(Items.TRIDENT, SYTHE);
+        entries.addAfter(SYTHE, ICE_SWORD);
 
     }
 
