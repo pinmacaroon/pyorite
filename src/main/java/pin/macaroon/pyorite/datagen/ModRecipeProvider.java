@@ -131,7 +131,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('s', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ICE_SWORD)));
-
+        /*
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAILCE, 1)
                 .pattern("i")
                 .pattern("s")
@@ -140,7 +140,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('s', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAILCE)));
-
+        */
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ARCH_PLUSH, 1)
                 .pattern("bbg")
                 .pattern("bhg")
