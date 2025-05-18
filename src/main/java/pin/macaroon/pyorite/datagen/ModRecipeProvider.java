@@ -123,23 +123,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PRETTY_PINK_HEART), conditionsFromItem(ModItems.PRETTY_PINK_HEART))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BOX_PLUSH)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_SWORD, 1)
-                .pattern("i")
-                .pattern("i")
-                .pattern("s")
-                .input('i', Ingredient.ofItems(Blocks.ICE, Blocks.BLUE_ICE, Blocks.FROSTED_ICE, Blocks.PACKED_ICE))
-                .input('s', Items.STICK)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ICE_SWORD)));
+        // ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_SWORD, 1)
+        //  .pattern("i")
+        //   .pattern("i")
+        //  .pattern("s")
+        //  .input('i', Ingredient.ofItems(Blocks.ICE, Blocks.BLUE_ICE, Blocks.FROSTED_ICE, Blocks.PACKED_ICE))
+        //  .input('s', Items.STICK)
+        // .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+        // .offerTo(exporter, new Identifier(getRecipeName(ModItems.ICE_SWORD)));
         /*
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAILCE, 1)
-                .pattern("i")
-                .pattern("s")
-                .pattern("s")
-                .input('i', Blocks.IRON_BLOCK)
-                .input('s', Items.STICK)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAILCE)));
+        //ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAILCE, 1)
+        //   .pattern("i")
+        //   .pattern("s")
+        //   .pattern("s")
+        //   .input('i', Blocks.IRON_BLOCK)
+        //   .input('s', Items.STICK)
+        //.criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+        // .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAILCE)));
         */
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ARCH_PLUSH, 1)
                 .pattern("bbg")

@@ -26,15 +26,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AEROBLADE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AEROITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HANDGUN, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ICE_SWORD, Models.HANDHELD);
+        //itemModelGenerator.register(ModItems.ICE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SHWRAPPEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PYORITE_CHUNK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRETTY_PINK_HEART, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.ICE_SWORD, Models.HANDHELD);
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_HELMET ));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_CHESTPLATE ));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_LEGGINGS ));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PYORITE_BOOTS ));
-        //itemModelGenerator.register(ModItems.MAILCE, Models.HANDHELD);
     }
 }

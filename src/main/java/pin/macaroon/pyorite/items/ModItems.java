@@ -26,8 +26,8 @@ public class ModItems {
     private static Item field26a = new Item(new FabricItemSettings().food(ModFoodComponents.CREEPER_COOKIE).maxCount(64));
     public static final Item CREEPER_COOKIE = registerItem("creeper_cookie", field26a);
     public static final Item AEROITE = registerItem("aeroite", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
-    public static final Item HANDGUN = registerItem("handgun", new GunItem(new FabricItemSettings().maxDamage(60), 10, ModItemTags.AMMO, 6D));
-    public static final Item GILDED_NETHERITE_HOLY_GREATSWORD = registerItem( "gilded_netherite_holy_greatsword", new SwordItem(ModToolMaterial.HOLY, 10, -3.5f, new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static final Item HANDGUN = registerItem("handgun", new GunItem(new FabricItemSettings().maxDamage(60), 5, ModItemTags.AMMO, 6D));
+    public static final Item GILDED_NETHERITE_HOLY_GREATSWORD = registerItem( "gilded_netherite_holy_greatsword", new SwordItem(ModToolMaterial.HOLY, 7, -3.5f, new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
     public static final Item SHWRAPPEL = registerItem("shwrappel",new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
     public static final Item PYORITE_CHUNK = registerItem("pyorite_chunk",new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
     public static final Item PYORITE_HELMET = registeritem( "pyorite_helmet", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -35,7 +35,7 @@ public class ModItems {
     public static final Item PYORITE_LEGGINGS = registeritem( "pyorite_leggings", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PYORITE_BOOTS = registeritem( "pyorite_boots", new ArmorItem(ModArmorMaterials.PYORITE_CHUNK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item PRETTY_PINK_HEART = registeritem( "pretty_pink_heart", new Item(new FabricItemSettings()));
-    public static final Item ICE_SWORD = registerItem("popsicle", new IceSwordItem(ModToolMaterial.ICE, 3, 3, new FabricItemSettings()));
+  //  public static final Item ICE_SWORD = registerItem("popsicle", new IceSwordItem(ModToolMaterial.ICE, 3, -3F, new FabricItemSettings()));
     //public static final Item MAILCE = registerItem("mailce", new MailceItem(ToolMaterials.IRON, new FabricItemSettings().maxDamage(128)));
 
 
@@ -87,7 +87,7 @@ public class ModItems {
         entries.addAfter(PYORITE_LEGGINGS, PYORITE_BOOTS);
 
         entries.addAfter(Items.TRIDENT, SYTHE);
-        entries.addAfter(SYTHE, ICE_SWORD);
+       // entries.addAfter(SYTHE, ICE_SWORD);
 
     }
 
