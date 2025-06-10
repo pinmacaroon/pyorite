@@ -31,7 +31,7 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("plush_got", InventoryChangedCriterion.Conditions.items(ModBlocks.PIN_PLUSH))
+                .criterion("plush_got", InventoryChangedCriterion.Conditions.items(ModBlocks.BOX_PLUSH))
                 .build(consumer, Pyorite.MOD_ID + "/root");
     }
 }

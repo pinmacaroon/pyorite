@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     PYORITE_CHUNK( "pyorite", 25, new int[]{ 3, 8, 6, 3},  19,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 3f, 2, () -> Ingredient.ofItems(ModItems.PYORITE_CHUNK));
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 3f, 2f, () -> Ingredient.ofItems(ModItems.PYORITE_CHUNK));
 
     ;
 

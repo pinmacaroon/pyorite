@@ -47,7 +47,7 @@ public class ModLootTableModifiers {
             } else if (TRESUR_CEST.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f)) //ch in %
+                        .conditionally(RandomChanceLootCondition.builder(0.1f)) //ch in %
                         .with(ItemEntry.builder(ModItems.AEROITE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 builder.pool(poolBuilder.build());
