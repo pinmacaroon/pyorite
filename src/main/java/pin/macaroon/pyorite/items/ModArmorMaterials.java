@@ -11,8 +11,8 @@ import pin.macaroon.pyorite.Pyorite;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    PYORITE_CHUNK( "pyorite", 25, new int[]{ 3, 8, 6, 4},  19,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0, () -> Ingredient.ofItems(ModItems.PYORITE_CHUNK));
+    PYORITE_CHUNK( "pyorite", 25, new int[]{ 3, 8, 6, 3},  19,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 3f, 2, () -> Ingredient.ofItems(ModItems.PYORITE_CHUNK));
 
     ;
 

@@ -1,11 +1,11 @@
-// 1.20.1	2025-05-18T12:23:49.0974406	Pyorite/Recipes
+// 1.20.1	2025-06-10T10:40:26.3269986	Pyorite/Recipes
 78473d68e9bbf6dd284087350a67aebcf18dc335 data\pyorite\advancements\recipes\combat\aeroblade.json
 96712e751a81e2b537f9626b6378b993b83405c8 data\pyorite\advancements\recipes\combat\pyorite_chestplate_smithing.json
 1b41182bc75e61506ff3be8343f8ad8d672e3e45 data\pyorite\recipes\handgun.json
 4f7981a4c90eb75800d2b84b765fe41dc9ac9043 data\pyorite\recipes\pyorite_leggings_smithing.json
 5ad2f0032c3a519bb53e1fa219fb93d151e974d3 data\pyorite\advancements\recipes\combat\pyorite_boots_smithing.json
-f9ab33fb63bd593530c9645d09a8639ae4ed73ab data\pyorite\recipes\aeroblade.json
 b6b3cb66af2f7679738571ce0e7aeb1d3f44f430 data\pyorite\recipes\arch_plush.json
+f9ab33fb63bd593530c9645d09a8639ae4ed73ab data\pyorite\recipes\aeroblade.json
 50e2459023fbd35c979476e172d50f6b45a1db24 data\pyorite\recipes\elementite_scythe_smithing.json
 90ae7c9274d3c92af6edfb640ed94444ade0775e data\pyorite\advancements\recipes\misc\elementite_smithing_template.json
 1f179b6d7a349aa99ca6028ebbdf2b4ed49a0061 data\pyorite\recipes\creeper_cookie.json
@@ -30,4 +30,4 @@ a1914863ade556a501d0098eaef10dec27ed9fc8 data\pyorite\recipes\pin_plush.json
 72b8d3f894e7e968ec920bc2a34b46060577c708 data\pyorite\advancements\recipes\misc\elementite_ingot.json
 787da75afaaa4b4cae8a4fa8a18d9689063fc29f data\pyorite\recipes\shwrappel.json
 0f497c729f9f053bee8f29c48c2c121cd5d6248e data\pyorite\advancements\recipes\misc\pyorite_chunk.json
-77af50072adce157812de5ac4b8b861e061362d6 data\pyorite\recipes\gilded_netherite_holy_greatsword.json
+fd97a6b41d6eca4f5be3da82f4662092d962d6af data\pyorite\recipes\gilded_netherite_holy_greatsword.json

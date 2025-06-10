@@ -85,7 +85,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('n', Items.NETHERITE_BLOCK)
                 .input('g', Items.RAW_GOLD_BLOCK)
                 .input('b', Items.BLAZE_ROD)
-                .input('f', Items.NETHERITE_SCRAP)
+                .input('f', Items.GILDED_BLACKSTONE)
                 .criterion(hasItem(Items.ANCIENT_DEBRIS), conditionsFromItem(Items.ANCIENT_DEBRIS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GILDED_NETHERITE_HOLY_GREATSWORD)));
 
